@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "118635366659",
+    "firebase_url": "https://pankh-71abf.firebaseio.com",
+    "project_id": "pankh-71abf",
+    "storage_bucket": "pankh-71abf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118635366659:android:a883aac0e1510141814136",
+        "android_client_info": {
+          "package_name": "com.kredivation.pankh"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "118635366659-upgre0f496v2ntcfdkktusftdecrpgn8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kredivation.pankh",
+            "certificate_hash": "531305f626b8ac71c0f038311ac7a455d6a67ad9"
+          }
+        },
+        {
+          "client_id": "118635366659-f7614rbhar291bn63ddbfnenl32jemnc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByN-mnWt7Z9NuisazgcdcdA-lzvSvwAB4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118635366659-f7614rbhar291bn63ddbfnenl32jemnc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
