@@ -271,7 +271,7 @@ public class Functions {
         }
 
 
-        ApiRequest.Call_Api(activity, Variables.likeDislikeVideo, parameters, new Callback() {
+        ApiRequest.Call_Api(activity, Variables.likeDislikeVideoNew, parameters, new Callback() {
             @Override
             public void Responce(String resp) {
                 api_callBack.OnSuccess(resp);
@@ -436,7 +436,7 @@ public class Functions {
             e.printStackTrace();
         }
 
-        ApiRequest.Call_Api(activity, Variables.follow_users, parameters, new Callback() {
+        ApiRequest.Call_Api(activity, Variables.follow_usersNew, parameters, new Callback() {
             @Override
             public void Responce(String resp) {
                 Functions.cancel_loader();
@@ -476,7 +476,7 @@ public class Functions {
 
         Log.d("resp", parameters.toString());
 
-        ApiRequest.Call_Api(activity, Variables.get_user_data, parameters, new Callback() {
+        ApiRequest.Call_Api(activity, Variables.get_user_dataNew, parameters, new Callback() {
             @Override
             public void Responce(String resp) {
                 Functions.cancel_loader();
@@ -514,7 +514,7 @@ public class Functions {
         }
 
 
-        ApiRequest.Call_Api(activity, Variables.DeleteVideo, parameters, new Callback() {
+        ApiRequest.Call_Api(activity, Variables.DeleteVideoNew, parameters, new Callback() {
             @Override
             public void Responce(String resp) {
                 Functions.cancel_loader();

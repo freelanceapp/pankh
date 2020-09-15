@@ -1,34 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Title"
             android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Title"
+            android:layout_weight="1"
             android:textColor="@color/black"
-            android:layout_margin="5dp"/>
+            android:textSize="@dimen/_14dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/_10dp"
+            android:layout_height="@dimen/_30dp">
+
+            <ImageView
+                android:layout_width="@dimen/_30dp"
+                android:layout_height="@dimen/_30dp"
+                android:src="@drawable/ic_scroll" />
+        </LinearLayout>
 
 
     </LinearLayout>
 
 
-       <androidx.recyclerview.widget.RecyclerView
-         android:layout_width="match_parent"
-         android:layout_height="match_parent"
-         android:minHeight="100dp"
-         android:id="@+id/horizontal_recylerview"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/horizontal_recylerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="100dp" />
 
 
 </LinearLayout>

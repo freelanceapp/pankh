@@ -4,7 +4,8 @@
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
 
-    <color name="maincolor">#E25E14</color>
+    <color name="maincolor">#00b1f1</color>
+    <color name="maincolor_old">#E25E14</color>
 
     <color name="white">#fff</color>
     <color name="colorwhite_50">#CCffffff</color>
@@ -24,11 +25,14 @@
     <color name="transparent">#00ffffff</color>
     <color name="fifty_transparent_black">#802F2F2F</color>
     <color name="colorLightGrey">#FFFFFF</color>
-    <color name="redcolor">#ff0008</color>
+    <color name="redcolor">#00b1f1</color>
+    <color name="redcolor_old">#ff0008</color>
+    <color name="skybule">#00b1f1</color>
+    <color name="app_color_old">#c52127</color>
+    <color name="app_color">#00b1f1</color>
 
-    <color name="app_color">#c52127</color>
-
-    <color name="appthemcolor">#F01206</color>
+    <color name="appthemcolor">#00b1f1</color>
+    <color name="appthemcolor_old">#F01206</color>
 
     <color name="emoji_input_tint">#353535</color>
     <color name="message_item_background">#ffffff</color>

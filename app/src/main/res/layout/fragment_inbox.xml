@@ -36,11 +36,11 @@
                     android:layout_height="wrap_content"
                     android:text="Inbox"
                     android:id="@+id/username"
-                    android:textSize="16dp"
+                    android:textSize="@dimen/_16dp"
                     android:textStyle="bold"
                     android:layout_centerInParent="true"
                     android:layout_centerVertical="true"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginLeft="@dimen/_10dp"
                     android:textColor="@color/black"/>
 
             </RelativeLayout>

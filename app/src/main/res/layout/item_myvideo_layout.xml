@@ -8,7 +8,7 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="@dimen/_150dp"
         android:id="@+id/thumb_image"
         android:layout_margin="1dp"
         android:scaleType="centerCrop"/>
@@ -25,8 +25,8 @@
         android:layout_alignParentBottom="true">
 
         <ImageView
-            android:layout_width="20dp"
-            android:layout_height="20dp"
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="@dimen/_20dp"
             android:scaleType="fitCenter"
             android:src="@drawable/ic_eye_white"/>
 

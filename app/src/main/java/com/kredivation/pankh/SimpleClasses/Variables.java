@@ -8,10 +8,10 @@ import java.util.Locale;
 
 
 public class Variables {
-
-    public static String watermark = "TUKTUK.mp4";
-    public static String appName = "TUKTUK";
-    public static String filePath = Environment.getExternalStorageDirectory() + "/TUKTUK/";
+//TUKTUK
+    public static String watermark = "pankh.mp4";
+    public static String appName = "pankh";
+    public static String filePath = Environment.getExternalStorageDirectory() + "/pankh/";
     public static String device = "android";
 
     public static int screen_width;
@@ -48,9 +48,10 @@ public class Variables {
     public static String gender = "u_gender";
     public static String islogin = "is_login";
     public static String device_token = "device_token";
+    public static String usernameId = "usernameId";
 
 
-    public static String tag = "tuktuk_";
+    public static String tag = "pankh_";
 
     public static String Selected_sound_id = "null";
 
@@ -87,35 +88,36 @@ public class Variables {
 
     //    public static String domain="http://domain.com/API/tictic/index.php?p=";
 //    public static String base_url="http://domain.com/API/tictic/";
-    public static String domain = "https://kredivation.com/digdig/API/index.php?p=";
-    public static String base_url = "https://kredivation.com/digdig/API/";
-//    public static String base_url = "http://ppankh.com/API/";
+//    public static String domain = "https://kredivation.com/digdig/API/index.php?p=";
+//    public static String base_url = "https://kredivation.com/digdig/API/";
+    public static String base_url = "http://ppankh.com/API/";
 
 
-    public static String SignUp = domain + "signup";
-    public static String uploadVideo = domain + "uploadVideo";
-    public static String showAllVideos = domain + "showAllVideos";
-    public static String showMyAllVideos = domain + "showMyAllVideos";
-    public static String likeDislikeVideo = domain + "likeDislikeVideo";
-    public static String updateVideoView = domain + "updateVideoView";
-    public static String allSounds = domain + "allSounds";
-    public static String fav_sound = domain + "fav_sound";
-    public static String my_FavSound = domain + "my_FavSound";
-    public static String my_liked_video = domain + "my_liked_video";
-    public static String follow_users = domain + "follow_users";
-    public static String discover = domain + "discover";
-    //    public static String showVideoComments=domain+"showVideoComments";
-//    public static String postComment=domain+"postComment";
-    public static String edit_profile = domain + "edit_profile";
-    public static String get_user_data = domain + "get_user_data";
-    public static String get_followers = domain + "get_followers";
-    public static String get_followings = domain + "get_followings";
-    public static String SearchByHashTag = domain + "SearchByHashTag";
-    public static String sendPushNotification = domain + "sendPushNotification";
-    public static String uploadImage = domain + "uploadImage";
-    public static String DeleteVideo = domain + "DeleteVideo";
+//    public static String SignUp = domain + "signup";
+//    public static String uploadVideo = domain + "uploadVideo";
+//    public static String showAllVideos = domain + "showAllVideos";
+//    public static String showMyAllVideos = domain + "showMyAllVideos";
+//    public static String likeDislikeVideo = domain + "likeDislikeVideo";
+//    public static String updateVideoView = domain + "updateVideoView";
+//    public static String allSounds = domain + "allSounds";
+//    public static String fav_sound = domain + "fav_sound";
+//    public static String my_FavSound = domain + "my_FavSound";
+//    public static String my_liked_video = domain + "my_liked_video";
+//    public static String follow_users = domain + "follow_users";
+//    public static String discover = domain + "discover";
+//    //    public static String showVideoComments=domain+"showVideoComments";
+////    public static String postComment=domain+"postComment";
+//    public static String edit_profile = domain + "edit_profile";
+//    public static String get_user_data = domain + "get_user_data";
+//    public static String get_followers = domain + "get_followers";
+//    public static String get_followings = domain + "get_followings";
+//    public static String SearchByHashTag = domain + "SearchByHashTag";
+//    public static String sendPushNotification = domain + "sendPushNotification";
+//    public static String uploadImage = domain + "uploadImage";
+//    public static String DeleteVideo = domain + "DeleteVideo";
 
     //------new APi------
+    public static String SignUp = base_url + "signup.php";
     public static String showVideoComments = base_url + "getAllVideoComment.php";
     public static String postComment = base_url + "postCommentOnvideo.php";
     public static String sendPushNotificationnew = base_url + "sendPushNotification.php";

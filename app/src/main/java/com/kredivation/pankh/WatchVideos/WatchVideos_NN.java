@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.Rect;
 import android.graphics.drawable.BitmapDrawable;
 import android.media.MediaScannerConnection;
 import android.net.Uri;
@@ -18,6 +19,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -117,7 +119,7 @@ public class WatchVideos_NN extends AppCompatActivity implements Player.EventLis
 
     private KeyboardHeightProvider keyboardHeightProvider;
 
-    RelativeLayout write_layout;
+    LinearLayout write_layout;
 
 
     EditText message_edit;
@@ -505,7 +507,7 @@ public class WatchVideos_NN extends AppCompatActivity implements Player.EventLis
 
         Log.d("resp", "" + height);
 
-        RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(write_layout.getWidth(), write_layout.getHeight());
+        LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(write_layout.getWidth(), write_layout.getHeight());
         params.bottomMargin = height;
         write_layout.setLayoutParams(params);
 
@@ -1333,5 +1335,21 @@ public class WatchVideos_NN extends AppCompatActivity implements Player.EventLis
 
     }
 
-
+    //for hid keyboard when tab outside edittext box
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent event) {
+        if (event.getAction() == MotionEvent.ACTION_DOWN) {
+            View v = getCurrentFocus();
+            if (v instanceof EditText) {
+                Rect outRect = new Rect();
+                v.getGlobalVisibleRect(outRect);
+                if (!outRect.contains((int) event.getRawX(), (int) event.getRawY())) {
+                    v.clearFocus();
+                    InputMethodManager imm = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
+                    imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
+                }
+            }
+        }
+        return super.dispatchTouchEvent(event);
+    }
 }

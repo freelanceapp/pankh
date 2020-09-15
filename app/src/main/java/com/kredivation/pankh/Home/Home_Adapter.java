@@ -66,6 +66,7 @@ public class Home_Adapter extends RecyclerView.Adapter<Home_Adapter.CustomViewHo
         holder.bind(i,item,listener);
 
         holder.username.setText(item.first_name+" "+item.last_name);
+        holder.videoView.setText(item.views);
 
 
             if((item.sound_name==null || item.sound_name.equals("") || item.sound_name.equals("null"))){
@@ -125,7 +126,7 @@ public class Home_Adapter extends RecyclerView.Adapter<Home_Adapter.CustomViewHo
     class CustomViewHolder extends RecyclerView.ViewHolder {
 
       //  PlayerView playerview;
-        TextView username,desc_txt,sound_name;
+        TextView username,desc_txt,sound_name,videoView;
         ImageView user_pic,sound_image;
 
         LinearLayout like_layout,comment_layout,shared_layout,sound_image_layout,alert_layout;
@@ -139,6 +140,7 @@ public class Home_Adapter extends RecyclerView.Adapter<Home_Adapter.CustomViewHo
            // playerview=view.findViewById(R.id.playerview);
 
             username=view.findViewById(R.id.username);
+            videoView=view.findViewById(R.id.videoView);
             user_pic=view.findViewById(R.id.user_pic);
             sound_name=view.findViewById(R.id.sound_name);
             sound_image=view.findViewById(R.id.sound_image);

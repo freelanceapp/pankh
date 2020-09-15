@@ -2,7 +2,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/mainlayout"
     android:layout_width="match_parent"
-    android:layout_height="80dp"
+    android:layout_height="wrap_content"
     android:background="@android:color/white">
 
     <LinearLayout
@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="@color/lightgraycolor"
+        android:visibility="gone"
         android:orientation="vertical" />
 
     <RelativeLayout
@@ -18,13 +19,13 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_marginLeft="15dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp">
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_10dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/user_image"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="@dimen/_60dp"
+            android:layout_height="@dimen/_60dp"
             android:layout_centerVertical="true"
             android:src="@drawable/profile_image_placeholder" />
 
@@ -47,7 +48,7 @@
                     android:layout_marginLeft="10dp"
                     android:text="Username"
                     android:textColor="@color/black"
-                    android:textSize="15dp"
+                    android:textSize="@dimen/_15dp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -55,12 +56,12 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:layout_marginRight="20dp"
+                    android:layout_marginRight="@dimen/_20dp"
                     android:paddingTop="1dp"
                     android:paddingBottom="1dp"
-                    android:text="1 January"
-                    android:textColor="@color/graycolor"
-                    android:textSize="12sp" />
+                    android:text=""
+                    android:textColor="@color/darkgray"
+                    android:textSize="@dimen/_12dp" />
 
             </RelativeLayout>
 
@@ -68,12 +69,12 @@
                 android:id="@+id/message"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:layout_marginTop="5dp"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginTop="@dimen/_5dp"
                 android:maxLines="2"
-                android:text="Your Message"
+                android:text=""
                 android:textColor="@color/black"
-                android:textSize="13dp"
+                android:textSize="@dimen/_13dp"
 
                 />
         </LinearLayout>

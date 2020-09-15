@@ -60,7 +60,7 @@
                 app:cardBackgroundColor="@color/white"
                 android:layout_width="match_parent"
                 android:layout_alignParentBottom="true"
-                android:layout_height="@dimen/_68dp">
+                android:layout_height="@dimen/_70dp">
 
                 <RelativeLayout
                     android:id="@+id/write_layout"
@@ -76,10 +76,10 @@
                         android:layout_height="match_parent"
                         android:layout_toLeftOf="@+id/send_btn_layout"
                         android:backgroundTint="@color/transparent"
-                        android:hint="Leave a comment..."
+                        android:hint="Write a comment..."
                         android:textColor="@color/black"
                         android:textColorHint="@color/darkgray"
-                        android:textSize="14dp" />
+                        android:textSize="@dimen/_13dp" />
 
                     <RelativeLayout
                         android:id="@+id/send_btn_layout"
@@ -90,8 +90,8 @@
 
                         <ImageButton
                             android:id="@+id/send_btn"
-                            android:layout_width="@dimen/_45dp"
-                            android:layout_height="@dimen/_45dp"
+                            android:layout_width="@dimen/_40dp"
+                            android:layout_height="@dimen/_40dp"
                             android:background="@color/transparent"
                             android:scaleType="fitCenter"
                             android:layout_marginTop="@dimen/_3dp"

@@ -23,16 +23,17 @@
             android:layout_width="match_parent"
             android:background="@drawable/round_ransparent"
             android:layout_alignParentBottom="true"
+            android:layout_marginRight="@dimen/_5dp"
+            android:layout_marginLeft="@dimen/_5dp"
+            android:paddingTop="@dimen/_5dp"
             android:layout_height="wrap_content">
 
             <com.google.android.material.tabs.TabLayout
                 android:id="@+id/tabs"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_48dp"
+                android:layout_height="@dimen/_52dp"
                 android:layout_alignParentBottom="true"
-                android:layout_marginLeft="-1dp"
                 android:layout_weight="1"
-                android:background="@drawable/d_top_white_line"
                 android:elevation="5dp"
                 android:gravity="center"
                 app:tabGravity="fill"
@@ -42,7 +43,7 @@
                 app:tabPaddingStart="0dp"
                 app:tabSelectedTextColor="@color/black"
                 app:tabTextAppearance="@style/Base.TextAppearance.AppCompat.Small"
-                app:tabTextColor="@color/dimgray" />
+                app:tabTextColor="@color/white" />
         </LinearLayout>
 
 

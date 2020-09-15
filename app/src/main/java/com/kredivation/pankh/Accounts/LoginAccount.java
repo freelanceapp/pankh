@@ -538,6 +538,7 @@ public class LoginAccount extends Activity {
                 editor.putString(Variables.u_name, userdata.optString("first_name") + " " + userdata.optString("last_name"));
                 editor.putString(Variables.gender, userdata.optString("gender"));
                 editor.putString(Variables.u_pic, userdata.optString("profile_pic"));
+                editor.putString(Variables.usernameId, userdata.optString("username"));
                 editor.putBoolean(Variables.islogin, true);
                 editor.commit();
 

@@ -59,7 +59,7 @@ public class Profile_Tab_F extends RootFragment implements View.OnClickListener 
     Context context;
 
 
-    public  TextView username,video_count_txt;
+    public  TextView username,userid,video_count_txt;
     public  ImageView imageView;
     public  TextView follow_count_txt,fans_count_txt,heart_count_txt;
 
@@ -102,12 +102,6 @@ public class Profile_Tab_F extends RootFragment implements View.OnClickListener 
         // Inflate the layout for this fragment
         view= inflater.inflate(R.layout.fragment_profile_tab, container, false);
         context=getContext();
-
-
-
-
-
-
         return init();
     }
 
@@ -154,6 +148,7 @@ public class Profile_Tab_F extends RootFragment implements View.OnClickListener 
     public View init(){
 
         username=view.findViewById(R.id.username);
+        userid=view.findViewById(R.id.userid);
         imageView=view.findViewById(R.id.user_image);
         imageView.setOnClickListener(this);
 
@@ -239,6 +234,7 @@ public class Profile_Tab_F extends RootFragment implements View.OnClickListener 
 
     public void update_profile(){
         username.setText(Variables.sharedPreferences.getString(Variables.f_name, "") + " " + Variables.sharedPreferences.getString(Variables.l_name, ""));
+        userid.setText(Variables.sharedPreferences.getString(Variables.usernameId, ""));
         pic_url = Variables.sharedPreferences.getString(Variables.u_pic, "null");
 
         try {

@@ -55,13 +55,13 @@ public class Profile_F extends RootFragment implements View.OnClickListener {
 
    public  TextView follow_unfollow_btn;
    CardView follow_unfollow_btnView;
-   public  TextView username,video_count_txt;
+   public  TextView username,video_count_txt,userid;
    public  ImageView imageView;
    public  TextView follow_count_txt,fans_count_txt,heart_count_txt;
 
     ImageView back_btn,setting_btn;
 
-    String user_id,user_name,user_pic;
+    String user_id,user_name,user_pic,usernameId;
 
     Bundle bundle;
 
@@ -107,6 +107,7 @@ public class Profile_F extends RootFragment implements View.OnClickListener {
             user_id=bundle.getString("user_id");
             user_name=bundle.getString("user_name");
             user_pic=bundle.getString("user_pic");
+            //usernameId=bundle.getString("usernameId");
         }
 
 
@@ -154,6 +155,7 @@ public class Profile_F extends RootFragment implements View.OnClickListener {
     public View init(){
 
         username=view.findViewById(R.id.username);
+        userid=view.findViewById(R.id.userid);
         imageView=view.findViewById(R.id.user_image);
         imageView.setOnClickListener(this);
 
@@ -439,7 +441,7 @@ public class Profile_F extends RootFragment implements View.OnClickListener {
                 JSONObject data=msgArray.getJSONObject(0);
                 JSONObject user_info=data.optJSONObject("user_info");
                 username.setText(user_info.optString("first_name")+" "+user_info.optString("last_name"));
-
+                userid.setText(user_info.optString("usernameId"));
                 Profile_F.pic_url=user_info.optString("profile_pic");
                 Picasso.with(context)
                         .load(Profile_F.pic_url)

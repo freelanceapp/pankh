@@ -6,7 +6,7 @@
             android:topRightRadius="25dp"
             android:topLeftRadius="25dp"
             android:bottomLeftRadius="25dp"/>
-        <solid android:color="@color/gainsboro" />
+        <solid android:color="@color/skybule" />
     </shape>
 </item>
 <item android:top="1dp" android:left="1dp" android:right="1dp" android:bottom="1dp">
@@ -16,7 +16,7 @@
             android:topRightRadius="25dp"
             android:topLeftRadius="25dp"
             android:bottomLeftRadius="25dp"/>
-        <solid android:color="@color/com_facebook_button_background_color"></solid>
+        <solid android:color="@color/skybule"></solid>
     </shape>
 </item>
 </layer-list>

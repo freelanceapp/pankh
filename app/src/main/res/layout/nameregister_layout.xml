@@ -23,7 +23,7 @@
         android:layout_marginTop="68dp"
         android:layout_marginEnd="25dp"
         android:fontFamily="@font/baloo"
-        android:text="You're cute. Whats your name?"
+        android:text="Whats your name?"
         android:textColor="@android:color/white"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"

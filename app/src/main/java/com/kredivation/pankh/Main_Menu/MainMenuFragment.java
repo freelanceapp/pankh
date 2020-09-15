@@ -112,7 +112,7 @@ LinearLayout tabView;
         View view1 = LayoutInflater.from(context).inflate(R.layout.item_tablayout, null);
         ImageView imageView1= view1.findViewById(R.id.image);
         TextView  title1=view1.findViewById(R.id.text);
-        imageView1.setImageDrawable(getResources().getDrawable(R.drawable.ic_home_white));
+        imageView1.setImageDrawable(getResources().getDrawable(R.drawable.ic_homenew));
         title1.setText("Home");
         title1.setTextColor(context.getResources().getColor(R.color.white));
         tabLayout.getTabAt(0).setCustomView(view1);
@@ -121,9 +121,9 @@ LinearLayout tabView;
         ImageView imageView2= view2.findViewById(R.id.image);
         TextView  title2=view2.findViewById(R.id.text);
         imageView2.setImageDrawable(getResources().getDrawable(R.drawable.ic_discovery_gray));
-        imageView2.setColorFilter(ContextCompat.getColor(context, R.color.colorwhite_50), android.graphics.PorterDuff.Mode.SRC_IN);
+        imageView2.setColorFilter(ContextCompat.getColor(context, R.color.white), android.graphics.PorterDuff.Mode.SRC_IN);
         title2.setText("Discover");
-        title2.setTextColor(context.getResources().getColor(R.color.colorwhite_50));
+        title2.setTextColor(context.getResources().getColor(R.color.white));
         tabLayout.getTabAt(1).setCustomView(view2);
 
 
@@ -134,18 +134,18 @@ LinearLayout tabView;
         ImageView imageView4= view4.findViewById(R.id.image);
         TextView  title4=view4.findViewById(R.id.text);
         imageView4.setImageDrawable(getResources().getDrawable(R.drawable.ic_notification_gray));
-        imageView4.setColorFilter(ContextCompat.getColor(context, R.color.colorwhite_50), android.graphics.PorterDuff.Mode.SRC_IN);
+        imageView4.setColorFilter(ContextCompat.getColor(context, R.color.white), android.graphics.PorterDuff.Mode.SRC_IN);
         title4.setText("Inbox");
-        title4.setTextColor(context.getResources().getColor(R.color.colorwhite_50));
+        title4.setTextColor(context.getResources().getColor(R.color.white));
         tabLayout.getTabAt(3).setCustomView(view4);
 
         View view5 = LayoutInflater.from(context).inflate(R.layout.item_tablayout, null);
         ImageView imageView5= view5.findViewById(R.id.image);
         TextView  title5=view5.findViewById(R.id.text);
         imageView5.setImageDrawable(getResources().getDrawable(R.drawable.ic_profile_gray));
-        imageView5.setColorFilter(ContextCompat.getColor(context, R.color.colorwhite_50), android.graphics.PorterDuff.Mode.SRC_IN);
+        imageView5.setColorFilter(ContextCompat.getColor(context, R.color.white), android.graphics.PorterDuff.Mode.SRC_IN);
         title5.setText("Profile");
-        title5.setTextColor(context.getResources().getColor(R.color.colorwhite_50));
+        title5.setTextColor(context.getResources().getColor(R.color.white));
         tabLayout.getTabAt(4).setCustomView(view5);
 
 
@@ -161,7 +161,7 @@ LinearLayout tabView;
                 switch (tab.getPosition()){
                     case 0:
                         OnHome_Click();
-                        image.setImageDrawable(getResources().getDrawable(R.drawable.ic_home_white));
+                        image.setImageDrawable(getResources().getDrawable(R.drawable.ic_homenew));
                         title.setTextColor(context.getResources().getColor(R.color.white));
                         break;
 
@@ -204,7 +204,6 @@ LinearLayout tabView;
                         image.setImageDrawable(getResources().getDrawable(R.drawable.ic_discovery_gray));
                         title.setTextColor(context.getResources().getColor(R.color.darkgray));
                         break;
-
                     case 3:
                         image.setImageDrawable(getResources().getDrawable(R.drawable.ic_notification_gray));
                         title.setTextColor(context.getResources().getColor(R.color.darkgray));
@@ -421,38 +420,38 @@ LinearLayout tabView;
         TabLayout.Tab tab1=tabLayout.getTabAt(1);
         View view1=tab1.getCustomView();
         ImageView imageView1= view1.findViewById(R.id.image);
-        imageView1.setColorFilter(ContextCompat.getColor(context, R.color.colorwhite_50), android.graphics.PorterDuff.Mode.SRC_IN);
+        imageView1.setColorFilter(ContextCompat.getColor(context, R.color.white), android.graphics.PorterDuff.Mode.SRC_IN);
         TextView tex1=view1.findViewById(R.id.text);
-        tex1.setTextColor(context.getResources().getColor(R.color.colorwhite_50));
+        tex1.setTextColor(context.getResources().getColor(R.color.white));
         tab1.setCustomView(view1);
 
         TabLayout.Tab tab2=tabLayout.getTabAt(2);
         View view2=tab2.getCustomView();
         ImageView image= view2.findViewById(R.id.image);
-        image.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_recoedvideo));
+        image.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_recodvideo_gry));
         tab2.setCustomView(view2);
 
         TabLayout.Tab tab3=tabLayout.getTabAt(3);
         View view3=tab3.getCustomView();
         ImageView imageView3= view3.findViewById(R.id.image);
-        imageView3.setColorFilter(ContextCompat.getColor(context, R.color.colorwhite_50), android.graphics.PorterDuff.Mode.SRC_IN);
+        imageView3.setColorFilter(ContextCompat.getColor(context, R.color.white), android.graphics.PorterDuff.Mode.SRC_IN);
         TextView tex3=view3.findViewById(R.id.text);
-        tex3.setTextColor(context.getResources().getColor(R.color.colorwhite_50));
+        tex3.setTextColor(context.getResources().getColor(R.color.white));
         tab3.setCustomView(view3);
 
 
         TabLayout.Tab tab4=tabLayout.getTabAt(4);
         View view4=tab4.getCustomView();
         ImageView imageView4= view4.findViewById(R.id.image);
-        imageView4.setColorFilter(ContextCompat.getColor(context, R.color.colorwhite_50), android.graphics.PorterDuff.Mode.SRC_IN);
+        imageView4.setColorFilter(ContextCompat.getColor(context, R.color.white), android.graphics.PorterDuff.Mode.SRC_IN);
         TextView tex4=view4.findViewById(R.id.text);
-        tex4.setTextColor(context.getResources().getColor(R.color.colorwhite_50));
+        tex4.setTextColor(context.getResources().getColor(R.color.white));
         tab4.setCustomView(view4);
 
 
-        RelativeLayout.LayoutParams params= new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
-        pager.setLayoutParams(params);
-        tabLayout.setBackground(getResources().getDrawable(R.drawable.d_top_white_line));
+//        RelativeLayout.LayoutParams params= new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+//        pager.setLayoutParams(params);
+//        tabLayout.setBackground(getResources().getDrawable(R.drawable.d_top_white_line));
     }
 
     public void Onother_Tab_Click(){
@@ -491,10 +490,10 @@ LinearLayout tabView;
 
 
 
-        RelativeLayout.LayoutParams params= new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
-        params.addRule(RelativeLayout.ABOVE, R.id.tabs);
-        pager.setLayoutParams(params);
-        tabLayout.setBackgroundColor(getResources().getColor(R.color.white));
+//        RelativeLayout.LayoutParams params= new RelativeLayout.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT,ViewGroup.LayoutParams.WRAP_CONTENT);
+//        params.addRule(RelativeLayout.ABOVE, R.id.tabs);
+//        pager.setLayoutParams(params);
+//        tabLayout.setBackgroundColor(getResources().getColor(R.color.white));
 
     }
 

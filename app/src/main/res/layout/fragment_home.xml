@@ -31,10 +31,10 @@
       android:layout_marginRight="@dimen/_8dp"
       android:layout_marginLeft="@dimen/_8dp"
       android:layout_alignParentBottom="true"
-      android:layout_marginBottom="@dimen/_43dp"
+      android:layout_marginBottom="@dimen/_49dp"
       android:indeterminateOnly="true"
       android:visibility="visible"
-      android:indeterminateTint="@color/white"
+      android:indeterminateTint="@color/skybule"
       android:secondaryProgress="@android:integer/config_shortAnimTime"/>
 
   </RelativeLayout>

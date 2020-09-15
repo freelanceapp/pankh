@@ -343,6 +343,7 @@ public class Home_F extends RootFragment implements Player.EventListener, Fragme
                     item.first_name = user_info.optString("first_name", context.getResources().getString(R.string.app_name));
                     item.last_name = user_info.optString("last_name", "User");
                     item.profile_pic = user_info.optString("profile_pic", "null");
+                    item.usernameId = user_info.optString("usernameId", "null");
 
                     JSONObject sound_data = itemdata.optJSONObject("sound");
                     item.sound_id = sound_data.optString("id");
@@ -359,6 +360,7 @@ public class Home_F extends RootFragment implements Player.EventListener, Fragme
                     item.liked = itemdata.optString("liked");
                     item.video_url = Variables.base_url + itemdata.optString("video");
                     item.video_description = itemdata.optString("description");
+                    item.views=itemdata.optString("view");
 
                     item.thum = Variables.base_url + itemdata.optString("thum");
                     item.created_date = itemdata.optString("created");
@@ -451,6 +453,7 @@ public class Home_F extends RootFragment implements Player.EventListener, Fragme
                     item.liked = itemdata.optString("liked");
                     item.video_url = Variables.base_url + itemdata.optString("video");
                     item.video_description = itemdata.optString("description");
+                    item.views=itemdata.optString("view");
 
                     item.thum = Variables.base_url + itemdata.optString("thum");
                     item.created_date = itemdata.optString("created");
@@ -805,6 +808,7 @@ public class Home_F extends RootFragment implements Player.EventListener, Fragme
             args.putString("user_id", item.fb_id);
             args.putString("user_name", item.first_name + " " + item.last_name);
             args.putString("user_pic", item.profile_pic);
+//            args.putString("usernameId", item.usernameId);
             profile_f.setArguments(args);
             transaction.addToBackStack(null);
             transaction.replace(R.id.MainMenuFragment, profile_f).commit();

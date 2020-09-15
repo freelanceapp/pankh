@@ -36,7 +36,8 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:screenOrientation="portrait"
         android:supportsRtl="false"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustPan" >
         <activity android:name="com.kredivation.pankh.SoundLists.VideoSound_A"></activity>
         <activity android:name="com.kredivation.pankh.Accounts.NameRegisterActivity"/>
         <activity android:name="com.kredivation.pankh.Accounts.OTPActivity"/>

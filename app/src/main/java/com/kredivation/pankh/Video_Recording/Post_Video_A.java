@@ -68,7 +68,7 @@ public class Post_Video_A extends AppCompatActivity implements ServiceCallback {
 
 
         progressDialog=new ProgressDialog(this);
-        progressDialog.setMessage("Please wait");
+        progressDialog.setMessage("Please wait...");
         progressDialog.setCancelable(false);
 
 

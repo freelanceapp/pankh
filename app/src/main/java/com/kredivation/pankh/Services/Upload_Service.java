@@ -31,6 +31,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.kredivation.pankh.Main_Menu.MainMenuActivity;
+import com.kredivation.pankh.SimpleClasses.Functions;
 import com.kredivation.pankh.SimpleClasses.Variables;
 import com.kredivation.pankh.Video_Recording.AnimatedGifEncoder;
 
@@ -217,7 +218,8 @@ public class Upload_Service extends Service{
 
                             Callback.ShowResponce("Their is some kind of problem from Server side Please Try Later");
                             stopForeground(true);
-                            stopSelf();
+//                            stopSelf();
+                            Stop_Service();
 
                            }
                     });
@@ -244,6 +246,19 @@ public class Upload_Service extends Service{
 
 
         return Service.START_STICKY;
+    }
+    // this function will stop the the ruuning service
+    public void Stop_Service(){
+        Upload_Service mService = new Upload_Service();
+
+        if (Functions.isMyServiceRunning(this,mService.getClass())) {
+            Intent mServiceIntent = new Intent(this.getApplicationContext(), mService.getClass());
+            mServiceIntent.setAction("stopservice");
+            startService(mServiceIntent);
+
+        }
+
+
     }
 
 
