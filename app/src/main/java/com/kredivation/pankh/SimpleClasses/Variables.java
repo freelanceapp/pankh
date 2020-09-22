@@ -83,7 +83,7 @@ public class Variables {
     public static String gif_api_key1 = "4Iq9SeDWa9YCZy9whmkbfp2gDBRLUDat";
 
 
-    public static String privacy_policy = "https://www.termsfeed.com/privacy-policy/4dec1a564a01ea0d15ed86c97c4e8253";
+    public static String privacy_policy = "http://ppankh.com/PrivacyPolicyforpankh.html";
 
 
     //    public static String domain="http://domain.com/API/tictic/index.php?p=";

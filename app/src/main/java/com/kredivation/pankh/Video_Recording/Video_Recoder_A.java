@@ -18,6 +18,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -60,7 +61,7 @@ public class Video_Recoder_A extends AppCompatActivity implements View.OnClickLi
     ArrayList<String> videopaths = new ArrayList<>();
 
     ImageButton record_image;
-    ImageButton done_btn;
+    ImageView done_btn;
     boolean is_recording = false;
     boolean is_flash_on = false;
 
@@ -231,7 +232,8 @@ public class Video_Recoder_A extends AppCompatActivity implements View.OnClickLi
             video_progress.resume();
 
 
-            done_btn.setBackgroundResource(R.drawable.ic_not_done);
+//            done_btn.setBackgroundResource(R.drawable.ic_uncheck);
+            done_btn.setImageDrawable(getResources().getDrawable(R.drawable.ic_uncheck));
             done_btn.setEnabled(false);
 
             record_image.setImageDrawable(getResources().getDrawable(R.drawable.ic_recoding_yes));
@@ -254,7 +256,7 @@ public class Video_Recoder_A extends AppCompatActivity implements View.OnClickLi
 
 
             if (sec_passed > ((Variables.recording_duration / 1000) / 3)) {
-                done_btn.setBackgroundResource(R.drawable.ic_done);
+                done_btn.setImageDrawable(getResources().getDrawable(R.drawable.ic_check_done));
                 done_btn.setEnabled(true);
             }
 

@@ -70,8 +70,11 @@ public class Preview_Video_A extends AppCompatActivity implements Player.EventLi
         findViewById(R.id.Goback).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
-                overridePendingTransition(R.anim.in_from_left, R.anim.out_to_right);
+//                finish();
+//                overridePendingTransition(R.anim.in_from_left, R.anim.out_to_right);
+                Intent intent = new Intent(Preview_Video_A.this, Video_Recoder_A.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.in_from_bottom, R.anim.out_to_top);
 
             }
         });
@@ -325,9 +328,11 @@ public class Preview_Video_A extends AppCompatActivity implements Player.EventLi
 
     @Override
     public void onBackPressed() {
-
-        finish();
-        overridePendingTransition(R.anim.in_from_left, R.anim.out_to_right);
+        Intent intent = new Intent(Preview_Video_A.this, Video_Recoder_A.class);
+        startActivity(intent);
+        overridePendingTransition(R.anim.in_from_bottom, R.anim.out_to_top);
+//        finish();
+//        overridePendingTransition(R.anim.in_from_left, R.anim.out_to_right);
 
     }
 

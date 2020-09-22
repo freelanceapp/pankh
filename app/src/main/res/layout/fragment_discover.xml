@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/_24dp">
+        android:layout_marginTop="@dimen/_30dp">
 
 
         <androidx.cardview.widget.CardView
@@ -44,7 +44,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Search"
-                android:padding="7dp"
+                android:paddingTop="@dimen/_8dp"
+                android:paddingBottom="@dimen/_8dp"
+                android:paddingLeft="@dimen/_7dp"
+                android:paddingRight="@dimen/_7dp"
                 android:textSize="14dp"
                 android:id="@+id/search_edit"
                 android:textColorHint="@color/darkgray"

@@ -1,16 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context="com.kredivation.pankh.Splash_A">
 
-
     <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/_280dp"
+        android:layout_height="@dimen/_280dp"
+        android:src="@drawable/pankhlogo" />
+
+    <TextView
+        android:id="@+id/datetxt"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/splash"
-        android:scaleType="centerCrop"/>
-
-
-</RelativeLayout>
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="☆꧁✬◦°˚°◦𝓢𝓪𝓹𝓷𝓸 𝓴𝓲 𝓾𝓭𝓪𝓪𝓷 ◦°˚°◦✬꧂☆"
+        android:textColor="@color/black"
+        android:paddingTop="@dimen/_25dp"
+        android:paddingBottom="@dimen/_25dp"
+        android:textSize="@dimen/_22dp" />
+</LinearLayout>

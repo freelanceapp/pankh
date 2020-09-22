@@ -126,38 +126,37 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
-                android:layout_toLeftOf="@+id/done"
                 android:orientation="vertical"
                 android:gravity="center"
                 android:id="@+id/upload_layout"
                 android:layout_centerVertical="true">
 
                 <ImageView
-                    android:layout_width="32dp"
-                    android:layout_height="32dp"
+                    android:layout_width="@dimen/_50dp"
+                    android:layout_height="@dimen/_50dp"
                     android:src="@drawable/ic_gallery_icon"/>
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Upload"
-                    android:textSize="12dp"
+                    android:textSize="@dimen/_12dp"
                     android:textStyle="bold"
                     android:layout_marginTop="5dp"
                     android:textColor="@color/white"/>
 
             </LinearLayout>
 
-        <ImageButton
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+        <ImageView
+            android:layout_width="@dimen/_60dp"
+            android:layout_height="@dimen/_60dp"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
             android:id="@+id/done"
             android:padding="3dp"
             android:background="@color/transparent"
             android:scaleType="fitCenter"
-            android:src="@drawable/ic_not_done"/>
+            android:src="@drawable/ic_uncheck"/>
 
         </RelativeLayout>
 
