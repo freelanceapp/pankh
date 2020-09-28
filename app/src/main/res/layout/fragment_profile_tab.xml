@@ -41,6 +41,16 @@
                     android:textSize="@dimen/_15dp"
                     android:textStyle="bold" />
 
+                <ImageView
+                    android:id="@+id/appShare"
+                    android:layout_width="@dimen/_45dp"
+                    android:layout_height="@dimen/_45dp"
+                    android:layout_toLeftOf="@+id/setting_btn"
+                    android:tint="@color/com_facebook_messenger_blue"
+                    android:layout_margin="@dimen/_10dp"
+                    android:src="@drawable/ic_appshare" />
+
+
 
                 <ImageButton
                     android:id="@+id/setting_btn"

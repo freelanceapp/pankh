@@ -56,7 +56,8 @@ public class Profile_F extends RootFragment implements View.OnClickListener {
    public  TextView follow_unfollow_btn;
    CardView follow_unfollow_btnView;
    public  TextView username,video_count_txt,userid;
-   public  ImageView imageView;
+    public  ImageView imageView;
+
    public  TextView follow_count_txt,fans_count_txt,heart_count_txt;
 
     ImageView back_btn,setting_btn;
@@ -155,6 +156,7 @@ public class Profile_F extends RootFragment implements View.OnClickListener {
     public View init(){
 
         username=view.findViewById(R.id.username);
+
         userid=view.findViewById(R.id.userid);
         imageView=view.findViewById(R.id.user_image);
         imageView.setOnClickListener(this);
