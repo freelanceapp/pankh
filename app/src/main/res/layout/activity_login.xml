@@ -85,7 +85,6 @@
                 android:layout_width="100dp"
                 android:layout_height="match_parent"
                 android:layout_toRightOf="@+id/userPhone"
-                android:background="@drawable/simplecolo_background"
                 android:text="SEND OTP"
                 android:textColor="@android:color/white"
                 android:textSize="14dp"

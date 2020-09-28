@@ -5,8 +5,12 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Resources;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.util.SparseArray;
 import android.view.ContextThemeWrapper;
 import android.view.Gravity;
@@ -51,6 +55,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import com.kredivation.pankh.R;
+
+import java.io.ByteArrayOutputStream;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -573,13 +579,21 @@ public class Profile_Tab_F extends RootFragment implements View.OnClickListener 
 
     public void ShareAPP() {
         try {
+            Bitmap inImage = BitmapFactory.decodeResource(getResources(),R.drawable.playstoreimg);
+            ByteArrayOutputStream bytes = new ByteArrayOutputStream();
+            inImage.compress(Bitmap.CompressFormat.JPEG, 100, bytes);
+            String path = MediaStore.Images.Media.insertImage(context.getContentResolver(), inImage, "pankh", null);
+            Uri imageUri = Uri.parse(path);
             Intent shareIntent = new Intent(Intent.ACTION_SEND);
-            shareIntent.setType("text/plain");
+//            shareIntent.setType("text/plain");
+            shareIntent.setType("image/*");
             shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Pankh");
-            String shareMessage = "\nPlease Share\n\n";
+            String shareMessage = "\nPankh is a great app for you to showcase your hidden talent. Make funny, entertaining or informative videos through our app, and become a star.\n\n";
             shareMessage = shareMessage + "https://play.google.com/store/apps/details?id=" + BuildConfig.APPLICATION_ID + "\n\n";
             shareIntent.putExtra(Intent.EXTRA_TEXT, shareMessage);
-            startActivity(Intent.createChooser(shareIntent, "choose one"));
+            shareIntent.putExtra(Intent.EXTRA_STREAM, imageUri);
+            shareIntent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
+            startActivity(Intent.createChooser(shareIntent, "Share with"));
         } catch (Exception e) {
             //e.toString();
         }

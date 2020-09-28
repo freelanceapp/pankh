@@ -554,6 +554,7 @@ public class Video_Recoder_A extends AppCompatActivity implements View.OnClickLi
         Intent intent = new Intent(this, Preview_Video_A.class);
         startActivity(intent);
         overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
+        finish();
     }
 
 

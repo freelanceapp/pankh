@@ -15,6 +15,30 @@
       },
       "oauth_client": [
         {
+          "client_id": "118635366659-c922qqqg6cnmi3dfdvqcts5sa448eevd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kredivation.pankh",
+            "certificate_hash": "c7fd2b1cff9acef1c15fc8e92cbf0c82772e14d2"
+          }
+        },
+        {
+          "client_id": "118635366659-5k6r060d9785evtl2j1vpbfq77k4edia.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kredivation.pankh",
+            "certificate_hash": "70bbc9b48e49b92d3c47a4d0cf538a348d6b4d2d"
+          }
+        },
+        {
+          "client_id": "118635366659-ev7h43b47q4qm5o850lkelmrpg90reag.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kredivation.pankh",
+            "certificate_hash": "b36cc174fe8236ce38bacc2a62ab6f5cae38cba6"
+          }
+        },
+        {
           "client_id": "118635366659-upgre0f496v2ntcfdkktusftdecrpgn8.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
@@ -36,7 +60,7 @@
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "118635366659-f7614rbhar291bn63ddbfnenl32jemnc.apps.googleusercontent.com",
+              "client_id": "118635366659-ft5jhbt7vq75ekf427954t8am38nt7n1.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
